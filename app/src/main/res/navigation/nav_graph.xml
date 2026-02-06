@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.my.mapupassessment.ui.home.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_history"
+            app:destination="@id/sessionHistoryFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/sessionHistoryFragment"
+        android:name="com.my.mapupassessment.ui.history.SessionHistoryFragment"
+        android:label="History">
+        <action
+            android:id="@+id/action_history_to_detail"
+            app:destination="@id/sessionDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/sessionDetailFragment"
+        android:name="com.my.mapupassessment.ui.detail.SessionDetailFragment"
+        android:label="Session Detail">
+        <argument
+            android:name="sessionId"
+            app:argType="long"/>
+    </fragment>
+
+</navigation>
