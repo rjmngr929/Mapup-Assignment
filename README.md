@@ -149,5 +149,5 @@ The project is designed to be easily extensible and maintainable, following mode
 
 ## 👨‍💻 Developed By
 
-**[Your Name]**
+**Rahul Prajapat**
 Android Developer
